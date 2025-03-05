@@ -31,8 +31,10 @@
     "Safari >= 12",
     "not Explorer <= 11"
   ],
-
-  "dependencies": {
-
+  "main": "xdebug.js",
+  "scripts": {
+  },
+  "bugs": {
+    "url": "https://github.com/wolxXx/xdebug-switcher/issues"
   }
 }

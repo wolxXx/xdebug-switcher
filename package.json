@@ -1,0 +1,38 @@
+{
+  "name": "xdebug-switcher",
+  "version": "0.1.0",
+  "keywords": [
+    "js",
+    "vanilla js",
+    "javascript",
+    "vanilla javascript",
+    "tools",
+    "xdebug"
+  ],
+  "description": "enable or disable xdebug, as xdebug helper for chrome is disabled. no further need for browser extensions.",
+  "homepage": "https://github.com/wolxXx/xdebug-switcher",
+  "author": "wolxXx (https://github.com/wolxXx)",
+  "contributors": [
+    "wolxXx <https://github.com/wolxXx>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wolxXx/xdebug-switcher"
+  },
+  "browserslist": [
+    ">= 0.5%",
+    "not dead",
+    "Chrome >= 60",
+    "Firefox >= 60",
+    "Firefox ESR",
+    "Edge >= 17",
+    "iOS >= 12",
+    "Safari >= 12",
+    "not Explorer <= 11"
+  ],
+
+  "dependencies": {
+
+  }
+}

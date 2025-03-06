@@ -1,6 +1,6 @@
 {
   "name": "wolxxx/xdebug-switcher",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "enable or disable xdebug, as xdebug helper for chrome is disabled. no further need for browser extensions.",
   "minimum-stability": "stable",
   "license": "MIT",

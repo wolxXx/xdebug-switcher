@@ -13,9 +13,11 @@ class XdebugHelper {
     }
 
     checkIfEnabled() {
+        this.enabled = false;
         if (document.cookie.indexOf(this.cookieName) > -1) {
             this.enabled = true;
         }
+        return this;
     }
 
     show() {
@@ -32,7 +34,10 @@ class XdebugHelper {
                 if (false === this.enabled) {
                     this.unsetCookie(this.cookieName);
                 }
-                this.show();
+                this
+                    .checkIfEnabled()
+                    .show()
+                ;
             });
         }
         if (true === this.enabled) {
@@ -43,6 +48,7 @@ class XdebugHelper {
             this.handler.innerHTML = 'Xdebug is disabled.'
             this.handler.style.color = '#d50e0e'
         }
+        return this;
     }
 
     setCookie(name, value) {
@@ -50,10 +56,12 @@ class XdebugHelper {
         date.setTime(date.getTime() + (666 * 24 * 60 * 60 * 1000));
         const expires = "expires=" + date.toUTCString();
         document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        return this;
     }
 
     unsetCookie(name) {
         document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        return this;
     }
 }
 document.addEventListener('DOMContentLoaded', () => {
